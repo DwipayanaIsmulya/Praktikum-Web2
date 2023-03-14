@@ -1,5 +1,4 @@
 <?php
-
 // Deklarasi Variabel
 $Jarijari = 4.2;
 $tinggi = 5.4;
@@ -11,9 +10,9 @@ $tinggiPrisma = 7.5;
 $tinggiLimas = 8.5;
 
 // NIM
-$nim = 8;
+$nim = 2;
 
-// Kondisi angka belakang NIM
+// Kondisi angka belakang NIM serta penghitungan rumus
 if( $nim == 0 || $nim == 1 ) {
     $tabung = 3.14 * $Jarijari * $Jarijari * $tinggi;
     echo number_format($tabung, 3);
@@ -30,5 +29,4 @@ if( $nim == 0 || $nim == 1 ) {
     $limasAlasPersegiPanjang = 1/3 * $panjang * $lebar * $tinggiLimas;
     echo number_format($limasAlasPersegiPanjang, 3);
 } 
-
 ?>
