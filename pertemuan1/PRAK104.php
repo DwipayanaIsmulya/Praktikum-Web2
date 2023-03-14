@@ -1,7 +1,6 @@
 <?php
-
+// Deklarasi Array
 $daftarSmartphone = array("Samsung Galaxy S22", "Samsung Galaxy S22+", "Samsung Galaxy A03", "Samsung Galaxy Xcover 5");
-// var_dump($daftarSmartphone);
 ?>
 
 <!DOCTYPE html>
@@ -11,6 +10,7 @@ $daftarSmartphone = array("Samsung Galaxy S22", "Samsung Galaxy S22+", "Samsung 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- CSS Style -->
     <style>
         table {
             font-family: sans-serif;
