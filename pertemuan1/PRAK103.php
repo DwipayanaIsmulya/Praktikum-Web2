@@ -8,5 +8,4 @@ $kelvin = $celcius + 273.15;
 echo "$fahrenheit<br>";
 echo "$reamur<br>";
 echo "$kelvin";
-
 ?>
