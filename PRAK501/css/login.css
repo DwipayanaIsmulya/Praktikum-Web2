@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.wave {
+  position: fixed;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.container {
+  width: 100vw;
+  height: 95vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 7rem;
+  padding: 0 2rem;
+}
+
+.img {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.img img {
+  width: 500px;
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+form {
+  width: 360px;
+}
+
+.avatar {
+  width: 100px;
+}
+
+form h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin: 15px 0;
+  color: #333;
+}
+
+form .goals-container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  /* background-color: aqua; */
+}
+
+form .goals-container a {
+  background-color: #4a48ce;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 65%;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border: 1px solid #6765e4;
+  border-radius: 17px;
+  color: #fff;
+  text-decoration: none;
+
+  /* text-align: center; */
+}
+
+form .goals-container a:hover {
+  background-color: #7371e7;
+  transition: 0.5s all;
+}
