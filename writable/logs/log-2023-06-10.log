@@ -1,0 +1,141 @@
+INFO - 2023-06-10 04:30:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 04:30:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 04:32:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-10 04:32:51 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\xampp\htdocs\Archive\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Archive\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `bu...', 0)
+#1 C:\xampp\htdocs\Archive\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bu...')
+#2 C:\xampp\htdocs\Archive\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bu...')
+#3 C:\xampp\htdocs\Archive\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bu...', Array, false)
+#4 C:\xampp\htdocs\Archive\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Archive\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Archive\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\Archive\app\Controllers\BukuController.php(26): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\Archive\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\BukuController->store()
+#9 C:\xampp\htdocs\Archive\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuController))
+#10 C:\xampp\htdocs\Archive\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Archive\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Archive\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-06-10 04:32:51 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `buku` (`judul`, `penulis`, `penerbit`, `tahun_terbit`, `created_at`, `updated_at`) VALUES (\'ff\', \'ff\', \'ff\', \'ff\', \'2023-06-10 04:32:51\', \'2023-06-10 04:32:51\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `buku` (`judul`, `penulis`, `penerbit`, `tahun_terbit`, `created_at`, `updated_at`) VALUES (\'ff\', \'ff\', \'ff\', \'ff\', \'2023-06-10 04:32:51\', \'2023-06-10 04:32:51\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `buku` (`judul`, `penulis`, `penerbit`, `tahun_terbit`, `created_at`, `updated_at`) VALUES (\'ff\', \'ff\', \'ff\', \'ff\', \'2023-06-10 04:32:51\', \'2023-06-10 04:32:51\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `buku` (`judul`, `penulis`, `penerbit`, `tahun_terbit`, `created_at`, `updated_at`) VALUES (:judul:, :penulis:, :penerbit:, :tahun_terbit:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\BukuController.php(26): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BukuController->store()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Archive\\public\\index.php')
+ERROR - 2023-06-10 04:37:24 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\xampp\htdocs\Archive\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Archive\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `bu...', 0)
+#1 C:\xampp\htdocs\Archive\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bu...')
+#2 C:\xampp\htdocs\Archive\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bu...')
+#3 C:\xampp\htdocs\Archive\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bu...', Array, false)
+#4 C:\xampp\htdocs\Archive\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Archive\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Archive\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\Archive\app\Controllers\BukuController.php(26): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\Archive\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\BukuController->store()
+#9 C:\xampp\htdocs\Archive\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuController))
+#10 C:\xampp\htdocs\Archive\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Archive\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Archive\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-06-10 04:37:24 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `buku` (`judul`, `penulis`, `penerbit`, `tahun_terbit`, `created_at`, `updated_at`) VALUES (\'ff\', \'ff\', \'f\', \'f\', \'2023-06-10 04:37:24\', \'2023-06-10 04:37:24\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `buku` (`judul`, `penulis`, `penerbit`, `tahun_terbit`, `created_at`, `updated_at`) VALUES (\'ff\', \'ff\', \'f\', \'f\', \'2023-06-10 04:37:24\', \'2023-06-10 04:37:24\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `buku` (`judul`, `penulis`, `penerbit`, `tahun_terbit`, `created_at`, `updated_at`) VALUES (\'ff\', \'ff\', \'f\', \'f\', \'2023-06-10 04:37:24\', \'2023-06-10 04:37:24\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `buku` (`judul`, `penulis`, `penerbit`, `tahun_terbit`, `created_at`, `updated_at`) VALUES (:judul:, :penulis:, :penerbit:, :tahun_terbit:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\BukuController.php(26): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BukuController->store()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Archive\\public\\index.php')
+ERROR - 2023-06-10 04:50:53 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\xampp\htdocs\Archive\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Archive\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `bu...', 0)
+#1 C:\xampp\htdocs\Archive\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bu...')
+#2 C:\xampp\htdocs\Archive\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bu...')
+#3 C:\xampp\htdocs\Archive\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bu...', Array, false)
+#4 C:\xampp\htdocs\Archive\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Archive\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Archive\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\Archive\app\Controllers\BukuController.php(26): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\Archive\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\BukuController->store()
+#9 C:\xampp\htdocs\Archive\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuController))
+#10 C:\xampp\htdocs\Archive\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Archive\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Archive\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-06-10 04:50:53 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `buku` (`judul`, `penulis`, `penerbit`, `tahun_terbit`, `created_at`, `updated_at`) VALUES (\'dsfih\', \'ihegh\', \'iwhge\', \'2002\', \'2023-06-10 04:50:53\', \'2023-06-10 04:50:53\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `buku` (`judul`, `penulis`, `penerbit`, `tahun_terbit`, `created_at`, `updated_at`) VALUES (\'dsfih\', \'ihegh\', \'iwhge\', \'2002\', \'2023-06-10 04:50:53\', \'2023-06-10 04:50:53\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `buku` (`judul`, `penulis`, `penerbit`, `tahun_terbit`, `created_at`, `updated_at`) VALUES (\'dsfih\', \'ihegh\', \'iwhge\', \'2002\', \'2023-06-10 04:50:53\', \'2023-06-10 04:50:53\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `buku` (`judul`, `penulis`, `penerbit`, `tahun_terbit`, `created_at`, `updated_at`) VALUES (:judul:, :penulis:, :penerbit:, :tahun_terbit:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\BukuController.php(26): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BukuController->store()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Archive\\public\\index.php')
+ERROR - 2023-06-10 10:28:49 --> mysqli_sql_exception: Table 'praktikum7.user' doesn't exist in E:\xampp\htdocs\CI4_Crud-main\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\CI4_Crud-main\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 E:\xampp\htdocs\CI4_Crud-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 E:\xampp\htdocs\CI4_Crud-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 E:\xampp\htdocs\CI4_Crud-main\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 E:\xampp\htdocs\CI4_Crud-main\app\Database\Seeds\UserSeeder.php(14): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 E:\xampp\htdocs\CI4_Crud-main\vendor\codeigniter4\framework\system\Database\Seeder.php(146): App\Database\Seeds\UserSeeder->run()
+#6 E:\xampp\htdocs\CI4_Crud-main\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#7 E:\xampp\htdocs\CI4_Crud-main\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#8 E:\xampp\htdocs\CI4_Crud-main\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#9 E:\xampp\htdocs\CI4_Crud-main\spark(97): CodeIgniter\CLI\Console->run()
+#10 {main}
+INFO - 2023-06-10 10:31:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:31:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:31:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:31:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:31:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:31:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:31:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:32:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:32:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:32:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:51:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:51:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:51:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:51:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:51:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:51:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:52:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:52:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:52:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:52:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:54:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:54:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:54:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:57:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:57:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:58:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:58:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:58:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:59:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:59:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 10:59:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-10 11:01:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
